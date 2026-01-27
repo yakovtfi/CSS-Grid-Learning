@@ -1,0 +1,104 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+
+        <nav class="navbar">
+            <h1>CSS Grid Learning</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Getting Started</a></li>
+                <li><a href="#">Grid Basics</a></li>
+                <li><a href="#">Grid Properties</a></li>
+                <li><a href="#">Examples</a></li>
+            </ul>
+        </aside>
+
+       
+        <main class="main-content">
+            <h2>Contact Form with Pseudo Selectors</h2>
+            <p>This form demonstrates various CSS pseudo selectors: <strong>:hover</strong>, <strong>:active</strong>, <strong>:focus</strong>, and <strong>:nth-child</strong>.</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required="">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" required="">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is this about?" required="">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required=""></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="priority">Priority Level:</label>
+                    <select id="priority" name="priority">
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="urgent">Urgent</option>
+                    </select>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" name="newsletter"> Subscribe to newsletter
+                    </label>
+                    <label>
+                        <input type="checkbox" name="terms" required=""> I agree to terms and conditions
+                    </label>
+                </div>
+
+                <div class="button-group">
+                    <button type="submit" class="btn-submit" disabled="">Submit Form</button>
+                    <button type="reset" class="btn-reset">Reset Form</button>
+                </div>
+            </form>
+
+            <section class="content-section">
+                <h3>Pseudo Selectors Used:</h3>
+                <ul>
+                    <li><strong>:hover</strong> - Applied to buttons and inputs when you mouse over them</li>
+                    <li><strong>:focus</strong> - Applied to inputs when you click or tab into them</li>
+                    <li><strong>:active</strong> - Applied to buttons when you click and hold them</li>
+                    <li><strong>:disabled</strong> - Applied to the submit button to show it's disabled</li>
+                    <li><strong>:visited</strong> - Applied to navigation links you've already visited</li>
+                    <li><strong>:nth-child</strong> - Applied to style specific form groups differently</li>
+                </ul>
+            </section>
+        </main>
+
+
+        <footer class="footer">
+            <p>© 2024 CSS Grid Exercise | Learning Resource for Students</p>
+        </footer>
+    </div>
+
+
+</body></html>
